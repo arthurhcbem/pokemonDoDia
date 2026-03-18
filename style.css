@@ -20,11 +20,10 @@ h2{
 background-color: #70b8f0;
 padding: 10px;
 width: 300px; 
-margin: 0 auto; /* O segredo: centraliza o título e remove margem de cima/baixo */
-border-radius: 8px; /* Fica mais moderno com as pontas arredondadas */
+margin: 0 auto; 
+border-radius: 8px; 
 }
 
-/* responsividade celular */
 @media (max-width:480px) {
 
     p{
