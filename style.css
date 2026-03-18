@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #c85048;
+    color: #f0f0f8;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+hr{
+   border: none;
+   height: 6px;
+    background-color: #a82028;
+    margin: 10px 0px;  
+}
+
+h2{
+background-color: #70b8f0;
+padding: 10px;
+width: 300px; 
+margin: 0 auto; /* O segredo: centraliza o título e remove margem de cima/baixo */
+border-radius: 8px; /* Fica mais moderno com as pontas arredondadas */
+}
+
+/* responsividade celular */
+@media (max-width:480px) {
+
+    p{
+        line-height: 1.0;
+    }
+img{
+    padding: 0px;
+}
+
+}
