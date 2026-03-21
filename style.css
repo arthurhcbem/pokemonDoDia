@@ -9,10 +9,20 @@ body{
     text-align: center;
 }
 
+.pergunta{
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    border-radius: 20px;
+    background-color:#89141b;
+    width: 90%;
+    max-width: 450px;
+}
+
 hr{
    border: none;
-   height: 6px;
-    background-color: #a82028;
+   height: 10px;
+    background-color: #89141b;
     margin: 10px 0px;  
 }
 
@@ -20,17 +30,23 @@ h2{
 background-color: #70b8f0;
 padding: 10px;
 width: 300px; 
-margin: 0 auto; 
-border-radius: 8px; 
+margin: 0 auto;
+border-radius: 8px;
 }
 
+/* responsividade celular */
 @media (max-width:480px) {
 
     p{
         line-height: 1.0;
+        font-size: 18px;
     }
 img{
     padding: 0px;
 }
-
+.pergunta{
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 15px;
+}
 }
