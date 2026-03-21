@@ -13,8 +13,8 @@
     document.getElementById("pokemon").innerHTML = `
     <br>
     <h2> ${data.name} </h2>
-    <img src="${data.sprites.front_default}" width="300px" padding="0px">
-    <p> <strong> Tipo: </strong> ${tipo1} ${tipo2} </p>
+   <img src="${data.sprites.front_default}" width="300px" alt="Imagem do Pokémon ${data.name}">
+   <p> <strong> Tipo: </strong> ${tipo1} ${tipo2} </p>
     <p> <strong> Status totais: </strong> ${data.base_experience} pontos </p>
 
     `
