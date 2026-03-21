@@ -1,5 +1,5 @@
  async function getPokemon() {
-    const idAleatorio = Math.floor(Math.random() * 151) + 1;
+    const idAleatorio = Math.floor(Math.random() * 386) + 1;
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${idAleatorio}`);
     let data = await response.json();
     let tipo1 = data.types[0].type.name;
