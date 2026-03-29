@@ -1,0 +1,9 @@
+{
+  "name": "pokemon do dia",
+  "short_name": "pkmndd",
+  "theme_color": "#89141b",
+  "background_color": "#c85048",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
