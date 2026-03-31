@@ -1,4 +1,20 @@
- async function getPokemon() {
+// A função que você trouxe para detectar tela de toque
+function deviceHasTouchscreen() {
+  return window.matchMedia('(pointer: coarse)').matches;
+}
+
+// Executa a verificação assim que a página carregar
+document.addEventListener('DOMContentLoaded', () => {
+  const spanAcao = document.getElementById('acao-usuario');
+  
+  // Se o dispositivo tiver tela sensível ao toque (pointer: coarse)
+  if (deviceHasTouchscreen()) {
+    spanAcao.innerText = "Toque";
+  }
+  // Se não for touch, ele mantém o "Clique" que já está no HTML padrão.
+});
+
+async function getPokemon() {
     const idAleatorio = Math.floor(Math.random() * 386) + 1;
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${idAleatorio}`);
     let data = await response.json();
