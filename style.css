@@ -34,6 +34,15 @@ margin: 0 auto; /* O segredo: centraliza o título e remove margem de cima/baixo
 border-radius: 8px; /* Fica mais moderno com as pontas arredondadas */
 }
 
+#pokebola {
+    cursor: pointer; 
+    transition: transform 0.1s ease; 
+}
+
+#pokebola:active {
+    transform: scale(0.9); 
+}
+
 /* responsividade celular */
 @media (max-width:480px) {
 
