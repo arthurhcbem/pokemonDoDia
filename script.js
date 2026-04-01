@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function getPokemon() {
+  const musica = document.getElementById('musica-fundo');
+    
+    if (musica.paused) {
+        musica.play().catch(erro => console.log("Erro ao reproduzir áudio:", erro));
+    }
     const idAleatorio = Math.floor(Math.random() * 386) + 1;
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${idAleatorio}`);
     let data = await response.json();
