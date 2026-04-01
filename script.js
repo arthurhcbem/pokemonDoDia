@@ -41,3 +41,19 @@ async function getPokemon() {
     `
 
  }
+
+ // --- ADICIONADO AQUI: CONTROLE DE MÚSICA EM SEGUNDO PLANO ---
+document.addEventListener("visibilitychange", function() {
+    const musica = document.getElementById('musica-fundo');
+    
+    // Prevenção: só executa se o elemento de áudio existir no HTML
+    if (musica) {
+        // Verifica se a página foi ocultada (app minimizado, ecrã apagado ou separador trocado)
+        if (document.hidden) {
+            musica.pause();
+        } else {
+            // Se o app voltou para o ecrã principal, tenta retomar a música.
+            musica.play().catch(erro => console.log("Aguardando o primeiro clique para liberar o áudio."));
+        }
+    }
+});
