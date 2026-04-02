@@ -1,3 +1,4 @@
 Projeto de pokedex que gera um pokemón aleatório de uma das 3 primeiras gerações (Kanto, Jotho, Hoenn).
 O site https://arthurhcbem.github.io/pokemonDoDia/ é um PWA responsivo e pode ser instalado através do seu navegador.
-PS: O site aparece como não confiável a princípio, devido a questões ligadas à API consumida pelo app, mas pode ser aberto normalmente.
+
+Este é um projeto estritamente acadêmico e sem fins lucrativos, criado apenas para fins de estudo e portfólio. Pokémon e todos os nomes e imagens relacionados são marcas registradas da Nintendo e da The Pokémon Company. Nenhuma infração de direitos autorais é intencional.
